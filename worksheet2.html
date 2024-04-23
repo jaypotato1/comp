@@ -1,0 +1,388 @@
+<HTML>
+
+
+<HEAD>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+
+  <STYLE type='text/css'>
+    body {
+      background-color: #B9FFB7;
+
+
+    }
+
+
+
+
+    .dropbtn {
+
+      background-color: green;
+      padding: 16px;
+      font-size: 16px;
+
+    }
+
+    .dropdown-content {
+      color: red;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+
+    }
+
+
+    .dropdown-content p {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      top: 50%;
+
+    }
+
+
+    .dropdown-content p:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+
+    .dropbtna {
+
+      background-color: green;
+      padding: 16px;
+      font-size: 16px;
+      left: 50%;
+
+    }
+
+    .dropdown-contenta {
+      color: red;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      left: 75%;
+
+    }
+
+
+    .dropdown-contenta p {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      left: 50%;
+    }
+
+
+    .dropdowna {
+      position: relative;
+      display: inline-block;
+      left: 50%;
+      top: 25%;
+
+    }
+
+
+    .dropdown-contenta p:hover {
+      background-color: #ddd;
+    }
+
+    .dropdowna:hover .dropdown-contenta {
+      display: block;
+    }
+
+    .dropdowna:hover .dropbtna {
+      background-color: #3e8e41;
+    }
+
+    #calculate {
+
+      width: 10%;
+      height: 10%;
+      background-color: white;
+      top: 70%;
+      left: 40%;
+      position: fixed;
+      border-radius: 10%;
+      border: solid red 5px;
+    }
+
+    #word {
+
+      width: 10%;
+      height: 10%;
+      top: 30%;
+      left: 20%;
+      position: fixed;
+
+
+    }
+
+    #word1 {
+
+      width: 10%;
+      height: 10%;
+      top: 40%;
+      left: 20%;
+      position: fixed;
+
+
+    }
+
+    #word2 {
+
+      width: 10%;
+      height: 10%;
+      top: 50%;
+      left: 20%;
+      position: fixed;
+
+
+    }
+
+
+
+
+    }
+
+    body {
+      background-color: #B9FFB7;
+      color: white;
+    }
+
+    #buttontitle {
+      width: 50%;
+      height: 11%;
+      background-color: #ABEDC6;
+      top: 1%;
+      left: 48.5%;
+      position: fixed;
+      border: solid #5B484A 5px;
+      text-align: ;
+      font-family: Copperplate;
+      line-height: 100px;
+      font-size: 80px;
+    }
+
+    #buttonbanner {
+      width: 15%;
+      height: 100%;
+      background-color: #EF922E;
+      top: 0%;
+      left: 0%;
+      position: fixed;
+      border: solid #5B484A 5px;
+    }
+
+    .button-container {
+      position: absolute;
+      border: solid saddlebrown 5px;
+      font-family: Copperplate;
+      font-size: 25px;
+    }
+
+    .button-container a {
+      text-decoration: none;
+      color: saddlebrown;
+
+    }
+
+    .button-container a:hover {
+      color: blueviolet;
+
+    }
+
+    #buttonworksheet {
+      width: 12%;
+      height: 9%;
+      background-color: whitesmoke;
+      top: 5%;
+      left: 1.5%;
+    }
+
+    #buttonspanishlearningsong {
+      width: 12%;
+      height: 9%;
+      background-color: whitesmoke;
+      top: 25%;
+      left: 1.5%;
+      font-size: 20.5px;
+    }
+
+    #buttonspanishranking {
+      width: 12%;
+      height: 9%;
+      background-color: whitesmoke;
+      top: 45%;
+      left: 1.5%;
+    }
+
+    #buttontool {
+      width: 12%;
+      height: 9%;
+      background-color: whitesmoke;
+      top: 65%;
+      left: 1.5%;
+      font-size: 33px;
+    }
+
+    #buttonspanishword {
+      width: 12%;
+      height: 9%;
+      background-color: whitesmoke;
+      top: 85%;
+      left: 1.5%;
+    }
+
+    #Images {
+      position: absolute;
+      z-index: 5;
+      top: -18%;
+      left: 64%;
+      width: 50%;
+      height: 55%;
+    }
+  </STYLE>
+
+
+</HEAD>
+
+
+
+
+<BODY>
+  <SCRIPT>
+    var Q1 = 0;
+    var Q2 = 0;
+    var Q3 = 0;
+    var score = 0;
+
+    function calculate() {
+      if (Q1 == 1) {
+        if (score == 0) {
+          score = score + 3;
+          alert("One point added! Current score: " + score);
+          document.getElementById("link1").style.pointerEvents = "none"; // Disable further clicks on Link 1
+        } else {
+          alert("You can only click Link 1 once!");
+        }
+      }
+    }
+
+    function wrong() {
+      if (Q2 == 2) {
+        if (score == 0) {
+          score = score + 1;
+          alert("WRONG but one is still correct :)");
+          document.getElementById("link2").style.pointerEvents = "none";
+        } else {
+          alert("You can only click an answer once!");
+        }
+      }
+    }
+
+
+    function scoreme() {
+
+      alert("Current score: " + score);
+
+
+
+
+    }
+  </SCRIPT>
+
+  <div class="dropdown">
+    <button class="dropbtn"></button>
+    <div class="dropdown-content">
+      <p onclick="Q1=1;calculate();"">
+        TENGO, TIENES, TENEMOS</p>
+      <p onclick=" Q2=2;wrong();"">TIENES, TENGO, TENEMOS</p>
+      <p onclick="Q3=3;wrong();"">TENEMOS, TENGO, TIENES</p>
+    </div>
+  </div>
+  <DIV id='calculate' onclick=" scoreme(scoreme);">Calculate
+    </DIV>
+
+    <DIV id='word'> YO_____________UN GATO
+    </DIV>
+    <DIV id='word1'> TU_____________UN PERRO?
+    </DIV>
+    <DIV id='word2'> NOSOTROS_____________EL DORADO
+    </DIV>
+
+
+    <div id="buttonbanner"></div>
+    Spanish learning website
+    <a href="index.html">
+      <div id="buttontitle">MEXIGATO</div>
+    </a>
+
+
+    <div class="button-container" id='buttonworksheet'>
+      <a href="buttonworksheet.html">Worksheets</a>
+    </div>
+
+    <div class="button-container" id='buttonspanishlearningsong'>
+      <a href="buttonspanishlearningsong.html">Spanish Learning Song</a>
+    </div>
+
+    <div class="button-container" id='buttonspanishranking'>
+      <a href="buttonspanishranking.html">Spanish Ranking</a>
+    </div>
+
+    <div class="button-container" id='buttontool'>
+      <a href="buttontool.html">Tools</a>
+    </div>
+
+    <div class="button-container" id='buttonspanishword'>
+      <a href="buttonspanishword.html">Spanish Word</a>
+    </div>
+
+
+    <img src='Images/mexicancat.png' id='Images'></img>
+
+
+
+
+</BODY>
+
+
+
+
+
+
+
+
+
+<HTML>
